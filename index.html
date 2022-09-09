@@ -1,0 +1,120 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+</head>
+
+<body>
+  <div class="logicCart"> </div>
+  <div class="cart">
+    <div class="title">
+      <h2>My Cart</h2>
+      <box-icon name='x-circle' class="equis"></box-icon>
+    </div>
+    <div class="empty-cart">
+      <img src="./img/empty-cart.png" alt="empty-cart">
+    </div>
+    <div class="sub-title">
+      <h2>Your cart is empty</h2>
+      <p>Please add an item to your cart to proceed with the purchase!</p>
+    </div>
+    
+    <div class="items-price">
+      <p>0 items</p>
+      <p>$price</p>
+    </div>
+    <div class="checkoutBTN">
+      <button class="checkout">Checkout</button>
+    </div>
+    
+  </div>
+
+  <div class="whole">
+    <nav class="nav" id="navbar">
+      <a href="#" class="home-btn">
+        <img src="./img/favicon.png" alt="home" width="30px" height="35px">
+        <ul class="nav-btn" >
+          <li class="store">Store</li>
+          <li>Home</li>
+          <li>Products</li>
+        </ul>
+      </a>
+
+      <div class="container-options iconCart">
+        <div class="menu-mobile">
+          <i class="bx bx-shopping-bag" width="25px" height="25px"></i>
+        </div>
+      </div>
+    </nav>
+  <div class="all-content">
+
+    <div class="home">
+
+      <div class="img-container">
+        <img class="home-img" src="./img/featured1.png" alt="">
+      </div>
+
+      <div class="home-info">
+        <h1 class="home-title">New Sweetshirt <br> COLLECTION 2022</h1>
+        <P class="home-info-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut hic id reiciendis
+          necessitatibus velit deleniti, quam harum voluptatem! Aspernatur, excepturi!</P>
+
+        <p class="text-big-number"><span class="big-number">$14.00</span></p>
+
+        <div class="buttons">
+          <button class="discover">Discover</button>
+          <button class="add-to-cart">Add to cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ALL ABOVE HOME -->
+
+    <!-- FILTER -->
+    <div class="filters">
+
+      <div class="products">
+
+        <ul class="products-detail tags">
+          <li class="products__line">
+            <h3 data-filter = 'all'>Show All</h3> 
+          </li>
+          <li class="products__line">
+            <h3 data-filter = '.shirts'>Shirts</h3>
+          </li>
+          <li class="products__line">
+            <h3 data-filter = '.hoddies'>Hoodies</h3>
+          </li>
+          <li class="products__line">
+            <h3 data-filter = '.sweatshirt'>Sweatshirt</h3>
+          </li>
+        </ul>
+
+        <div class="img-product-detail print">
+          
+          <div class="icons-img hoddies"></div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"
+    integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="./navbar.js"></script>
+  <script src="./cart.js"></script>
+
+</body>
+
+</html>
