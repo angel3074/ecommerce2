@@ -111,7 +111,6 @@ print.addEventListener("click", (e) => {
       const idproducto = +e.target.parentElement.parentElement.id
       const producto = cards.find((item) => item.id === idproducto);
     
-      console.log(parentElement)
       if(carrito[idproducto] && carrito[idproducto].amount < 10){
           carrito[idproducto].amount ++;
       }else if(!carrito[idproducto]){
@@ -157,66 +156,3 @@ mixitup('.img-product-detail', {
   }
 }).filter('all')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/* cards.forEach(({id, img, tipo, element, price, stock}) => {
-
-  html += `
-  <div class="cartLogic">
-  
-    <div class="myCart">
-      <h2>My Cart</h2>
-    </div>
-  <div class= 'img'>
-    <img src= '${img}'>
-  </div>
-    <div class="stock">
-      Stock: ${stock} | Price: $${price}
-    </div>
-    <div class="subTotal">
-      Subtotal: $${0.00}
-    </div>
-  
-    <button class="menos"></button>
-    <p class="quantity">3</p>
-    <button class="mas"></button>
-  
-  </div>
-  `;
-});
-
-item1.addEventListener('click', () => {
-  logicCart.innerHTML = producto1;
-})
-item2.addEventListener('click', () => {
-  
-})
-item3.addEventListener('click', () => {
-  
-})
-
-
-console.log(html)
-logicCart.innerHTML = html;
-
-console.log(iconCart) */}
